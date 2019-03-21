@@ -1,0 +1,701 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+body{
+    font-family: 'MicrosoftJhengHeiRegular', '微軟正黑體', sans-serif;
+    font-size: 16px;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+}
+h1{
+    font-weight: bold;
+    font-size: 24px;
+    margin-right: 58%;
+}
+header{
+    background-image: url(../image/header_desktop.png);
+    background-size: cover;
+    height: 420px;
+}
+/*導覽列製作----------------------------------------------------*/
+.navbar{
+    background-color: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2% 0;
+}
+.navbar > div{
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 2%;
+}
+.navbar > div:nth-of-type(1) > a{
+    color: #e74c3c;
+}
+.navbar > div > a{
+    color: #fff;
+    text-decoration: none;
+}
+.navbar > div > a:hover{
+    text-decoration: none;
+}
+.navbar > div:nth-of-type(5) > a:hover{
+    color: #f39c12;
+}
+#member:hover{
+    color: #f39c12;
+}
+#navMenu{
+    display: none;
+}
+/*標題文字-----------------------------------------------------*/
+.headerTitle{
+    width: 40%;
+	color: #fff;
+    background-color: rgba(0, 0, 0, 0.35);
+    margin: 6% auto;
+    text-align: center;
+    padding: 1% 0 2.5%;
+}
+.headerTitle > h2{
+    font-size: 36px;
+    margin: 5%;
+}
+/*---------------------------------------------------*/
+.bg-1{
+	background-color: rgb(236, 219, 172);
+}
+.bg-2{
+    background-color: #3D1101;
+}
+.bg-3{
+    background-color: rgb(248, 236, 187)
+}
+.ta-c{
+    text-align: center;
+}
+.subtitle{
+	text-align: center;
+    font-size: 20px;
+    color: #3D1101;
+    padding: 5% 0;
+    line-height: 32px;
+    font-weight: 600;
+}
+.subtitle > h3{
+    font-size: 24px;
+}
+.bg-3 .subtitle{
+	font-size: 24px;
+}
+.pd-b{
+	padding-bottom: 4%;
+}
+/*秘方製作--------------------------------------------------*/
+.allSecretRecipe{
+	display: flex;
+    flex-wrap: wrap;
+}
+.SecretRecipe{
+	width: calc(100% / 3);
+    text-align: center;
+    color: #3D1101;
+    font-weight: 500;
+}
+.SecretRecipe > h3{
+    font-size: 18px;
+    padding: 7% 0 0;
+}
+.SecretRecipe > img{
+    width: 50%;
+    height: 50%;
+}
+.SecretRecipe > p{
+    padding: 5% 22%;
+    text-align: left;
+}
+/*主廚製作------------------------------------------------*/
+.chef{
+    display: flex;
+    flex-wrap: wrap;
+    color: #EFE9E7;
+}
+.chefImg{
+    position: relative;
+    left: 8%;
+}
+.chefContent{
+	padding: 6% 10% 6% 0;
+    line-height: 28px;
+    color: #EFE9E7;
+}
+.chefContent > p:nth-last-of-type(1){
+    padding-top: 2%;
+}
+.w-30{
+    width: 30%;
+}
+.w-40{
+    width: 40%;
+}
+.w-50{
+    width: 50%;
+}
+.w-50 > h3{
+    font-size: 20px;
+}
+/*顧客推薦-----------------------------------------------*/
+.allGuests{
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 5%;
+}
+.guests{
+    width: calc(100% / 3);
+    padding-left: 5%;
+}
+.guestsImg{
+    display: flex;
+    flex-wrap: wrap;
+}
+.guestsImg > img{
+    width: 20%;
+    height: 20%;
+}
+.guestsImg > p{
+    color: #3D1101;
+    font-size: 18px;
+    line-height: 18px;
+    margin-top: 7%;
+    margin-left: 3%;
+}
+.guestsPraise{
+    padding-left: 23%;
+    width: 82%;
+    
+}
+.guestsPraise > p{
+    color: #3D1101;
+    line-height: 28px;
+}
+.guestsPraise > span{
+    color: rgba(61, 17, 1, 0.75);
+    display: block;
+    text-align: right;
+}
+/*地圖------------------------------------------------*/
+.restaurant{
+	display: flex;
+    flex-wrap: wrap;
+}
+.restaurantMap{
+    padding: 0 3% 0 13%;
+}
+.restaurantMap > img{
+    width: 100%;
+    height: auto;
+}
+/*表單------------------------------------------------*/
+.restaurantForm label{
+    display: block;
+    color: #3D1101;
+    font-size: 14px;
+    margin-bottom: 1%;
+}
+.restaurantForm > div > input{
+    width: 90%;
+    padding: 1.5% 0 1.5% 2%;
+    background: rgb(252, 240, 190);
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+    margin-bottom: 1.5%;
+    font-size: 16px;
+}
+.restaurantForm > div > input::placeholder{
+    color: rgb(112, 106, 84);
+}
+.vegetarian div{
+	font-size: 14px;
+}
+.btn-rs{
+    padding-top: 3%;
+    text-align: right;
+    width: 90%;
+}
+.btn-rs > button{
+    font-size: 14px;
+    color: #fff;
+    padding: 1.8% 3%;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+.btn-rs > button:nth-of-type(1){
+    background-color: rgba(0, 0, 0, 0.35);
+}
+.btn-rs > button:nth-of-type(2){
+    background-color: #F56C23;
+}
+/*頁尾-----------------------------------------------------*/
+footer{
+    color: #3D1101;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4% 3%;
+}
+footer p{
+    font-weight: 500;
+}
+footer h3{
+    font-size: 24px;
+    font-weight: 600;
+}
+.footerLogo{
+    font-family: 'Noto Sans TC', sans-serif;
+    font-size: 49px;
+    font-weight: 900;
+}
+.w-30:nth-of-type(1) p{
+    width: 80%;
+    margin-top: 5%;
+}
+.w-30:nth-of-type(2) div{
+    margin-top: 5%;
+    line-height: 20px;
+}
+.w-40 > div{
+    text-align: right;
+}
+.allLinkIcon{
+	font-size: 32px;
+    margin-top: 5%;
+}
+.googlePlus{
+	color: #DB4437;
+}
+.twitTer{
+	color: #41ABE1;
+}
+.faceBook{
+	color: #3A5795;
+}
+/*點餐主頁-------------------------------------------*/
+.ordering{
+    padding: 4% 15%;
+    display: flex;
+    flex-wrap: wrap;
+}
+/*點餐側頁-------------------------------------------*/
+.aside{
+    width: 25%;
+    color: #3D1101;
+}
+.aside h3{
+    font-size: 20px;
+    padding-left: 3.5%;
+}
+.aside i{
+    font-size: 26px;
+}
+.orderingTitle{
+	display: flex;
+    flex-wrap: wrap;
+    line-height: 32px;
+}
+.orderingItems{
+    line-height: 32px;
+}
+.orderingItems > li{
+    border-bottom: 1.5px solid #3D1101;
+    cursor: pointer;
+}
+.orderingItems > li:hover{
+    background-color: #3D1101;
+    color: #fff;
+}
+.active{
+    background-color: #3D1101;
+    color: #fff;
+}
+/*點餐餐點------------------------------------------*/
+.meals{
+    width: 75%;
+    padding-left: 4%;
+}
+.meals > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mealsTop{
+    margin-bottom: 5%;
+}
+.search{
+	width: 70%;
+}
+.search input{
+    width: 90%;
+    font-size: 20px;
+    border: 2px solid #3D1101;
+    background-color: rgb(236, 219, 172);
+}
+.search i{
+	background-color: #3D1101;
+    color: #fff;
+    padding: 6.5px;
+    cursor: pointer;
+}
+.mealsTop p{
+    padding-left: 13%;
+    cursor: pointer;
+    position: relative;
+}
+.mealsTop p > i{
+    font-size: 27px;
+    color: #3D1101;
+    cursor: pointer;
+}
+.mealsTop p:before{
+    content: '1';
+    position: absolute;
+    right: -3%;
+    top: -12%;
+    z-index: 99;
+    color: #fff;
+    border-radius: 30px;
+    background-color: #FF5E45;
+    width: 16px;
+    height: 16px;
+    text-align: center;
+}
+.mealsContent{
+    color: #3D1101;
+    font-size: 16px;
+    text-align: center;
+}
+.mealsContent > .mealsContentPd{
+	width: calc(100% / 3);
+    position: relative;
+    margin-bottom: 4%;
+    padding-right: 2%;
+}
+.mealsContentPd div > i{
+    position: absolute;
+    color: #fff;
+    top: 2%;
+    left: 2%;
+    font-size: 23px;
+    cursor: pointer;
+}
+.mealsContentBd{
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    padding-bottom: 1%;
+}
+.mealsContent img{
+    max-width: 100%;
+    height: auto;
+}
+.mealsContent h4{
+    font-size: 20px;
+    font-weight: 500;
+    padding: 6% 0 1%;
+}
+.mealsContent p{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10% 0 1%;
+}
+.mealsContent span{
+    font-size: 12px;
+}
+.mealsContent hr{
+    width: 45%;
+    border: none;
+    height: 1px;
+    background-color: #3D1101;
+}
+.mealsContent .join{
+    font-size: 16px;
+    color: #FF5E45;
+    font-weight: 500;
+    border: 2px solid #FF5E45;
+    border-radius: 3px;
+    padding: 3% 0;
+    margin: 5%;
+    cursor: pointer;
+}
+/*會員登入---------------------------------------------*/
+.p-b-3{
+	padding-bottom: 3%;
+}
+.memberTitle{
+    padding: 5% 0;
+	text-align: center;
+}
+.memberTitle h2{
+	color: #3D1101;
+    font-size: 48px;
+    font-weight: bolder;
+    margin-bottom: 1%;
+}
+.memberTitle p{
+	font-size: 20px;
+    font-weight: 600;
+}
+.memberForm{
+    width: 25%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 4px 0px rgba(0,0,0,0.16);
+    font-size: 16px;
+    color: #3D1101;
+    padding: 1% 1% 0.5% 2%;
+    border-top: 4px solid #FF5E45;
+}
+.memberForm h4{
+	text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+.memberFormItems > div{
+	display: flex;
+    flex-wrap: wrap;
+    margin: 3% 0;
+}
+.memberFormItems > div:nth-of-type(2){
+    margin: 0.5% 0;
+}
+.memberFormItems label{
+    display: block;
+    width: 100%;
+    margin-bottom: 1%;
+}
+.memberFormItems input{
+    width: 90%;
+    font-size: 16px;
+    padding: 1%;
+    background: rgb(252, 240, 190);
+    border: 1px solid #CCCCCC;
+    box-shadow: inset 0px 1px 0px 0px #ECECEC;
+    border-radius: 3px;
+}
+.memberFormItems a{
+    font-size: 14px;
+    color: #FF5E45;
+}
+.memberFormItems .memberBtn{
+	padding-top: 10%;
+}
+.memberBtn button{
+    font-size: 14px;
+    color: #fff;
+}
+.memberBtn button:nth-of-type(1){
+    background: rgba(0,0,0,0.35);
+    border-radius: 3px;
+    padding: 2.5% 17%;
+    border: none;
+    margin-right: 7%;
+    cursor: pointer;
+}
+.memberBtn button:nth-of-type(2){
+    background: #F56C23;
+    border-radius: 3px;
+    padding: 2.5% 15%;
+    border: none;
+    cursor: pointer;
+}
+/*iPad縮放-------------------------------------------------*/
+@media screen and (min-width: 768px) and (max-width: 1024px){
+    html{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    header{
+        width: 100%;
+        height: auto;
+        padding-bottom: 1%;
+    }
+    .navbar{
+        width: 100%;
+    }
+    .navbar > h1{
+        margin-right: 35%;
+    }
+    .headerTitle{
+	    width: 70%;
+    }
+    .SecretRecipe > img{
+        width: 70%;
+        height: auto;
+    }
+    .chefImg{
+        left: 0;
+    }
+    .chefImg > img{
+        width: 100%;
+        height: 100%;
+        padding-left: 4%;
+    }
+    .chefContent{
+        padding: 8% 5%;
+        line-height: 18px;
+	}
+    .restaurantMap{
+        padding: 0 3% 0;
+    }
+    /*登入----------------------------------------*/
+    .memberForm{
+        width: 90%;
+    }
+    /*點餐----------------------------------------*/
+    .ordering{
+	    padding: 4%;
+    }
+    .aside{
+        width: 100%;
+    }
+    .meals{
+        width: 100%;
+        margin-top: 7%;
+        padding: 0;
+    }
+    .search{
+        display: flex;
+        width: 100%;
+    }
+    .mealsTop > p{
+        margin-top: 3%;
+        width: 100%;
+        text-align: right;
+        padding-right: 3%;
+    }
+    .mealsTop p:before{
+        right: 1%;
+    }
+    .mealsContent > .mealsContentPd{
+        width: 100%;
+    }
+}
+/*手機縮放-------------------------------------------------------*/
+@media screen and (max-width: 767px){
+    html{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    body{
+        width: 100%;
+        overflow-x: hidden;
+    }
+    header{
+        width: 100%;
+        height: auto;
+        background-position: 83%;
+        padding-bottom: 1%;
+    }
+    .navbar{
+        position: relative;
+        padding: 5% 0;
+    }
+    .navbar > div{
+	    display: none;
+        width: 100%;
+        font-size: 20px;
+        line-height: 30px;
+        padding-left: 5%;
+    }
+    .navbar > div:hover{
+        background-color: rgba(149, 165, 166, 0.75);
+        cursor: pointer;
+    }
+    .navbar > h1{
+        margin-bottom: 5%;
+    }
+    #navMenu{
+        display: block;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        top: 3%;
+        right: 5%;
+        color: white;
+        z-index: 99;
+    }
+    .headerTitle{
+	    width: 90%;
+    }
+    .SecretRecipe{
+        width: 100%;
+    }
+    .chefImg{
+	    width: 100%;
+        margin-left: -30px;
+    }
+    .chefImg > img{
+        width: 100%;
+        height: 100%;
+    }
+    .chefContent{
+        width: 100%;
+        padding: 6% 10%;
+    }
+    .guests{
+        width: 100%;
+        margin-bottom: 10%;
+    }
+    .restaurantMap{
+        width: 100%;
+        padding: 3%;
+    }
+    .restaurant > div:nth-of-type(2){
+        width: 100%;
+        padding: 3% 3% 6%;
+    }
+    .restaurantForm{
+        width: 110%;
+    }
+    .footerMd > div{
+        width: 100%;
+        margin: 5%;
+    }
+    /*點餐MB-----------------------------------*/
+    .ordering{
+        padding: 4%;
+    }
+    .aside{
+        width: 100%;
+    }
+    .meals{
+        width: 100%;
+        margin-top: 7%;
+        padding: 0;
+    }
+    .search{
+        display: flex;
+        width: 100%;
+    }
+    .mealsTop > p{
+        margin-top: 3%;
+        width: 100%;
+        text-align: right;
+        padding-right: 3%;
+    }
+    .mealsTop p:before{
+        right: 1%;
+    }
+    .mealsContent > .mealsContentPd{
+        width: 100%;
+    }
+    /*登入MB---------------------------------*/
+    .memberForm{
+        width: 90%;
+    }
+}
