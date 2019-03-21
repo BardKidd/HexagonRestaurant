@@ -616,6 +616,10 @@ footer h3{
         background-color: rgba(149, 165, 166, 0.75);
         cursor: pointer;
     }
+    .navbar > div > a{
+        width: 100%;
+        display: block;
+    }
     .navbar > h1{
         margin-bottom: 5%;
     }
